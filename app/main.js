@@ -9,7 +9,7 @@ const server = net.createServer((connection) => {
   connection.addListener('data', (data) => {
     console.log(data.toString());
 
-    // response to an event where we get some data
+    // response to an event where we receive some data
     connection.write('+PONG\r\n')
     
   })
