@@ -36,6 +36,7 @@ const commandController = (connection, commands) => {
         console.error(err);
         // write the error
         connection.write("-WRONGTYPE Operation against a key holding a wrong kind of value")
+        
       }
     }
   }
